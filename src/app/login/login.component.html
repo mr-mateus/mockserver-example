@@ -1,0 +1,14 @@
+<div class="thf-xl-6 thf-lg-6 thf-md-6 thf-sm-6
+thf-offset-lg-3 thf-offset-xl-3 thf-offset-md-3 thf-offset-sm-3">
+  <div class="form-container">
+    <h1>Bem-vindo!</h1>
+    <form #loginForm="ngForm">
+      <thf-login [(ngModel)]="user.login" class="thf-xl-12 thf-lg-12 thf-md-12 thf-sm-12" name="login" t-placeholder="Insira seu e-mail/usuário" t-required>
+      </thf-login>
+      <thf-password [(ngModel)]="user.password" class="thf-xl-12 thf-lg-12 thf-md-12 thf-sm-12" name="password" t-placeholder="Insira sua senha" t-required>
+      </thf-password>
+      <thf-button class="thf-xl-12 thf-lg-12 thf-md-12 thf-sm-12" t-label="Login" t-type="primary"
+      (t-click)="login()" t-disabled="{{loginForm.invalid}}"></thf-button>
+    </form>
+  </div>
+</div>

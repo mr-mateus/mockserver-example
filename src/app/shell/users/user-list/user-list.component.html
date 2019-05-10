@@ -1,0 +1,5 @@
+<thf-page-list t-title="Usuários" [t-actions]="pageActions" [t-filter]="filterSettings">
+    <thf-table  t-hide-select-all="true" t-hide-text-overflow t-sort="true" t-striped="true" [t-columns]="columns"
+    [t-items]="userPage?.items" [t-loading]="isLoading" [t-show-more-disabled]="!userPage || !userPage?.hasNext" (t-show-more)="loadMore()">
+    </thf-table>
+</thf-page-list>

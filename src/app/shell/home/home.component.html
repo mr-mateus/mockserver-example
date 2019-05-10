@@ -1,0 +1,21 @@
+<thf-page-default t-title="Home">
+
+  <thf-widget class="thf-md-12 thf-lg-12 thf-mt-12" t-title="Número de devs Suíte Logistica">
+
+    <div id="without-participants" class="thf-font-subtitle thf-text-center" *ngIf="!total">
+      Sem participantes na Suíte logistica :'(
+      <br>
+      <br>
+      Contrata nóis Jackson :D
+    </div>
+
+    <div id="total-of-participants" class="thf-font-subtitle thf-text-center" *ngIf="total">
+      Total da equipe: {{total}} 
+      <br>
+      <br>
+      ;D 
+    </div>
+  </thf-widget>
+
+
+</thf-page-default>
